@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 93.645 s <<< FAILURE! - in TestSuite
+RunEdge(services.empirix.tests.MultiplePlatformTestCases)  Time elapsed: 0.12 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: C:\Users\shadow\Documents\eclipse-workspace\services.empirix.com\src\test\resources\driver\edgedriver.exe
+	at services.empirix.tests.MultiplePlatformTestCases.RunEdge(MultiplePlatformTestCases.java:80)
+
+RunFirefox(services.empirix.tests.MultiplePlatformTestCases)  Time elapsed: 0.122 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A232IQJ', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: FirefoxDriver
+	at services.empirix.tests.MultiplePlatformTestCases.RunFirefox(MultiplePlatformTestCases.java:57)
+
+RunChrome(services.empirix.tests.MultiplePlatformTestCases)  Time elapsed: 91.456 s  <<< FAILURE!
+java.lang.AssertionError: expected [Client Name] but found [???????]
+	at services.empirix.tests.MultiplePlatformTestCases.ExecuteTest(MultiplePlatformTestCases.java:98)
+	at services.empirix.tests.MultiplePlatformTestCases.RunChrome(MultiplePlatformTestCases.java:70)
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="5" name="MultipleCrossBrowser(failed)" parallel="methods">
+    <classes>
+      <class name="services.empirix.tests.MultiplePlatformTestCases">
+        <methods>
+          <include name="RunChrome"/>
+          <include name="tearoff"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- services.empirix.tests.MultiplePlatformTestCases -->
+    </classes>
+  </test> <!-- MultipleCrossBrowser(failed) -->
+</suite> <!-- Failed suite [Suite] -->
